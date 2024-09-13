@@ -1,0 +1,190 @@
+*{
+    padding: opx;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: "Georgia";
+    background-image: url("plane.avif");
+    background-size: cover;
+    margin: 0;
+    width: auto;
+    padding: 0;
+}
+nav{
+    background-color:rgb(8, 172, 16);
+    width: 110%;
+    text-transform: uppercase;
+}
+.container {
+    flex-direction:initial;
+    justify-content: center;
+}
+.alignment {
+    border-radius: 1px;
+}
+.header
+{
+    width: 110%;
+}
+img{
+    width: 170px;
+}
+p{
+    font-size: 20px;
+}
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 10px solid #e7e7e7;
+    background-color:yellow;
+} 
+.logo{
+    color:rgb(227, 241, 99);
+    font-size: 33px;
+    text-align: center;
+}
+nav ul{
+    float:center;
+    margin: 15px;
+}
+nav ul li{
+    color: lightcoral;
+    display: inline;
+    line-height: 0px 20px;
+    margin: 0px 5x;
+    padding: 0px 20px;
+    border-radius: 30px;
+}
+
+nav ul li a{
+    color: rgb(66, 105, 64);
+    font-size: 30px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+a,a:hover{
+    transition-duration: 5sec;
+    color:rgb(224, 90, 12);
+    border-radius: 60px;
+}
+.header
+{
+    text-align: center;
+    background-color: coral;
+    width: 20% 50%;
+    
+}
+p
+{
+    font-size: 20px;
+}
+
+.footer
+{
+    background-color:crimson;
+    width: 110%;
+}
+.footer-main{
+    width: 100%;
+    padding: 30px 10px 9px;
+}
+.socialicons
+{
+    display:flex;
+    justify-content: center;
+}
+.socialicons a
+{ 
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 100%;
+}
+.socialicons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+.socialicons a:hover
+{
+    background-color:gold;
+    transition: 0.5sec;
+     
+}
+.socialicons a:hover i{
+    color: aqua;
+    transition: 0.6sec;
+
+}
+.footer-bottom p
+{
+    font-size:15px;
+    color: lawngreen;
+    text-align: center;
+    background-color:cadetblue;
+    border-radius: 100px;
+}
+.checkbtn
+{
+    font-size: 30px;
+    color: white;
+    float: left;
+    line-height: 20px;
+    margin-right: 22px;
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+@media(max-width:840px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 30px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media(max-width:720px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 70%;
+        height: 70%;
+        background: #2c3e50;
+        top: 60px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+
+    }
+    #check:checked~ul{
+        left: 0;
+
+    }
+}
+section{
+    background: url(plane.avif) no-repeat;
+    background-size: cover;
+    height: calc(100vh-90px);
+}
